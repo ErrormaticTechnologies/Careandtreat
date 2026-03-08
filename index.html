@@ -541,8 +541,7 @@
                         </a>
                         <ul class="list-unstyled">
                           <li><a href="#" class="nav-link p-0">Doggoshine Premium Pet Shampoo</a></li>
-                          <li><a href="#" class="nav-link p-0">Fruit Shampoo</a></li>
-                          <li><a href="#" class="nav-link p-0">Cat Shampoo</a></li>
+                          
                         </ul>
                       </div> <!-- col-megamenu.// -->
 
@@ -691,6 +690,458 @@
 
 
 
+  <!-- ================= PET HOME FULL SECTION START ================= -->
+
+<section class="pet-home-wrapper">
+
+<style>
+.pet-home-wrapper{
+    max-width:1400px;
+    margin:0 auto 60px auto;
+    font-family:Arial, sans-serif;
+}
+
+/* ================= SLIDER ================= */
+
+.pet-slider{
+    position:relative;
+    width:100%;
+    height:380px;
+    overflow:hidden;
+}
+
+.pet-slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    opacity:0;
+    transition:opacity 0.8s ease;
+}
+
+.pet-slide.active{
+    opacity:1;
+}
+
+.pet-slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* arrows */
+.pet-arrow{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:30px;
+    color:white;
+    background:rgba(0,0,0,0.3);
+    padding:10px 15px;
+    cursor:pointer;
+    user-select:none;
+}
+
+.pet-arrow-left{ left:10px; }
+.pet-arrow-right{ right:10px; }
+
+/* ================= GRID ================= */
+
+.pet-home-grid{
+    margin-top:-80px;
+    padding:0 40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    position:relative;
+    z-index:5;
+}
+
+.pet-home-card{
+    background:white;
+    padding:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.pet-home-card:hover{
+    transform:translateY(-5px);
+}
+
+.pet-home-title{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.pet-inner-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
+
+.pet-inner-item{
+    text-align:center;
+    font-size:13px;
+}
+
+.pet-inner-item img{
+    width:100%;
+    height:110px;
+    object-fit:cover;
+    margin-bottom:5px;
+}
+
+.pet-explore{
+    margin-top:15px;
+    font-size:14px;
+    color:#007185;
+    cursor:pointer;
+}
+
+.pet-explore:hover{
+    text-decoration:underline;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .pet-slider{ height:250px; }
+    .pet-home-grid{ margin-top:20px; padding:0 20px; }
+}
+</style>
+
+<!-- ================= SLIDER HTML ================= -->
+
+<div class="pet-slider">
+
+    <div class="pet-slide active">
+        <img src="images/slide-1.jpg">
+    </div>
+
+    <div class="pet-slide">
+        <img src="images/slide-2.jpg">
+    </div>
+
+    <div class="pet-slide">
+        <img src="images/slide-3.jpg">
+    </div>
+
+    <div class="pet-arrow pet-arrow-left">&#10094;</div>
+    <div class="pet-arrow pet-arrow-right">&#10095;</div>
+
+</div>
+
+<!-- ================= GRID HTML ================= -->
+
+<div class="pet-home-grid">
+<div class="pet-home-card">
+    <div class="pet-home-title">Shampoo</div>
+    <div class="pet-inner-grid">
+        <div class="pet-inner-item"><img src="images/care & treat images/doggoshinepetshampoo-1.jpg">Doggoshine Shampoo</div>
+        <div class="pet-inner-item"><img src="images/care & treat images/doggoshinepetshampoo-2.jpg">Doggoshine Shampoo</div>
+        <div class="pet-inner-item"><img src="images/care & treat images/Orange smp.PNG">Fruit Shampoo</div>
+        <div class="pet-inner-item"><img src="images/care & treat images/Green Apple smp.PNG">Fruit Shampoo</div>
+    </div>
+    <div class="pet-explore"><a href="dogcat.html">Explore all</div></a>
+</div>
+
+<div class="pet-home-card">
+    <div class="pet-home-title">Hygiene</div>
+    <div class="pet-inner-grid">
+        <div class="pet-inner-item"><img src="images/care & treat images/Dry Bath.jpg">Dry Bath</div>
+        <div class="pet-inner-item"><img src="images/care & treat images/Dry Bath 2.jpg">Dry Bath</div>
+        <div class="pet-inner-item"><img src="images/care & treat images/Wet Wipes.jpg">Wet wipes</div>
+        <div class="pet-inner-item"><img src="images/care & treat images/Paw Cleaner.jpg">Paw cleaner</div>
+    </div>
+    <div class="pet-explore"><a href="hygiene.html">See more</div></a>
+</div>
+
+<div class="pet-home-card">
+    <div class="pet-home-title">Nutrition</div>
+    <div class="pet-inner-grid">
+        <div class="pet-inner-item"><img src="images/care & treat images/pawcal.jpg"></div>
+        <div class="pet-inner-item"><img src="images/care & treat images/petastar.jpg"></div>
+        <div class="pet-inner-item"><img src="images/care & treat images/petavit.jpg"></div>
+        <div class="pet-inner-item"><img src="images/care & treat images/livowick.jpg"></div>
+    </div>
+    <div class="pet-explore"><a href="nutrition.html">Shop now</div></a>
+</div>
+
+<div class="pet-home-card">
+    <div class="pet-home-title">Cleaning</div>
+    <div class="pet-inner-grid">
+        <div class="pet-inner-item"><img src="images/care & treat images/Pet Perfume.jpg"></div>
+        <div class="pet-inner-item"><img src="images/care & treat images/Wet Wipes.jpg"></div>
+        <div class="pet-inner-item"><img src="images/care & treat images/Kennel wash.PNG"></div>
+        <div class="pet-inner-item"><img src="images/care & treat images/Kennel wash.PNG">First Aid</div>
+    </div>
+    <div class="pet-explore"><a href="cleaning.html">Discover more</div></a>
+</div>
+
+</div>
+
+<script>
+const slides=document.querySelectorAll(".pet-slide");
+const left=document.querySelector(".pet-arrow-left");
+const right=document.querySelector(".pet-arrow-right");
+
+let index=0;
+
+function showSlide(i){
+    slides.forEach(s=>s.classList.remove("active"));
+    slides[i].classList.add("active");
+}
+
+right.onclick=function(){
+    index=(index+1)%slides.length;
+    showSlide(index);
+}
+
+left.onclick=function(){
+    index=(index-1+slides.length)%slides.length;
+    showSlide(index);
+}
+
+setInterval(()=>{
+    index=(index+1)%slides.length;
+    showSlide(index);
+},4000);
+</script>
+
+</section>
+
+<!-- ================= PET HOME FULL SECTION END ================= -->
+
+
+<!-- ================= RESPONSIVE PRODUCT SECTION START ================= -->
+<style>
+/* ---------- Scoped Reset ---------- */
+.products-section, 
+.products-section * {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ---------- Section ---------- */
+.products-section {
+  padding: 40px;
+  background: #f9f9f9;
+}
+
+/* ---------- Header ---------- */
+.products-section .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.products-section .section-header h2 {
+  font-size: 24px;
+}
+
+.products-section .section-header a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+/* ---------- Grid ---------- */
+.products-section .products-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* ---------- Card ---------- */
+.products-section .product-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.products-section .product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* ---------- Sale Badge ---------- */
+.products-section .sale-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #ff4081;
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+/* ---------- Images ---------- */
+.products-section .product-image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.products-section .product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.4s ease;
+}
+
+.products-section .product-image .hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* Hover effect only for desktop */
+@media (hover: hover) {
+  .products-section .product-card:hover .hover-img {
+    opacity: 1;
+  }
+
+  .products-section .product-card:hover .main-img {
+    opacity: 0;
+  }
+}
+
+/* ---------- Text ---------- */
+.products-section h3 {
+  font-size: 15px;
+  margin: 12px 0;
+  min-height: 40px;
+}
+
+.products-section .price {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.products-section .price span {
+  font-size: 14px;
+  color: #888;
+  text-decoration: line-through;
+  margin-left: 6px;
+}
+
+.products-section .rating {
+  font-size: 14px;
+  margin-top: 6px;
+  color: #f5a623;
+}
+
+.products-section .rating span {
+  color: #555;
+}
+
+/* ---------- Responsive Breakpoints ---------- */
+@media (max-width: 1024px) {
+  .products-section .products-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .products-section {
+    padding: 25px;
+  }
+
+  .products-section .products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .products-section {
+    padding: 15px;
+  }
+
+  .products-section .products-container {
+    grid-template-columns: 1fr;
+  }
+
+  .products-section .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .products-section h3 {
+    font-size: 14px;
+  }
+}
+</style>
+
+<section class="products-section">
+  <div class="section-header">
+    <h2>New Arrivals</h2>
+    <!-- <a href="#">View all →</a> -->
+  </div>
+
+  <div class="products-container">
+
+    <div class="product-card">
+      <span class="sale-badge">Sale</span>
+      <div class="product-image">
+        <img src="images/care & treat images/Wet Wipes.jpg" class="main-img" alt="">
+        <img src="" class="hover-img" alt="">
+      </div>
+      <h3>Cat Detangling & Shine Spray</h3>
+      <p class="price">₹397 <span>₹440</span></p>
+      <div class="rating">⭐⭐⭐⭐⭐<span>(1.8K reviews)</span></div>
+    </div>
+
+    <div class="product-card">
+      <span class="sale-badge">Sale</span>
+      <div class="product-image">
+        <img src="images/care & treat images/Oatmeal 500ML.jpeg" class="main-img" alt="">
+        <img src="image2-hover.jpg" class="hover-img" alt="">
+      </div>
+      <h3>Tick & Flea Shampoo</h3>
+      <p class="price">₹347 <span>₹399</span></p>
+      <div class="rating">⭐⭐⭐⭐⭐ <span>(1.8K reviews)</span></div>
+    </div>
+
+    <div class="product-card">
+      <span class="sale-badge">Sale</span>
+      <div class="product-image">
+        <img src="images/care & treat images/petastar.jpg" class="main-img" alt="">
+        <img src="image3-hover.jpg" class="hover-img" alt="">
+      </div>
+      <h3>Instant Fresh Waterless Kit</h3>
+      <p class="price">₹1,169 <span>₹1,299</span></p>
+      <div class="rating">⭐⭐⭐⭐⭐ <span>(1.8K reviews)</span></div>
+    </div>
+
+    <div class="product-card">
+      <span class="sale-badge">Sale</span>
+      <div class="product-image">
+        <img src="images/care & treat images/Pet Perfume.jpg" class="main-img" alt="">
+        <img src="image4-hover.jpg" class="hover-img" alt="">
+      </div>
+      <h3>Dog Complete Care Combo</h3>
+      <p class="price">₹2,975 <span>₹3,719</span></p>
+      <div class="rating">⭐⭐⭐⭐⭐ <span>(1.8K reviews)</span></div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  console.log("Fully responsive product section loaded");
+</script>
+
+<!-- ================= RESPONSIVE PRODUCT SECTION END ================= -->
+
   <section>
 
     <div class="slideshow slide-in arrow-absolute text-white position-relative">
@@ -763,701 +1214,6 @@
 
   </section>
 
-
-  <section id="shop-categories" class="section-padding">
-    <!-- <div class="container-lg">
-      <div class="row g-md-5">
-        <div class="col-md-3">
-          <ul class="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
-            <li class="nav-item">
-              <a href="shop.html" class="nav-link d-flex align-items-center gap-3 p-2">
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                  <use xlink:href="#dairy"></use>
-                </svg>
-                <span>Pet foods</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="shop.html" class="nav-link d-flex align-items-center gap-3 p-2">
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                  <use xlink:href="#meat"></use>
-                </svg>
-                <span>Birds</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="shop.html" class="nav-link d-flex align-items-center gap-3 p-2">
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                  <use xlink:href="#seafood"></use>
-                </svg>
-                <span>Fishes</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="shop.html" class="nav-link d-flex align-items-center gap-3 p-2">
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                  <use xlink:href="#canned"></use>
-                </svg>
-                <span>Canned foods</span>
-              </a>
-            </li>
-            <li class="nav-item position-relative">
-              <a
-                class="btn btn-toggle dropdown-toggle w-100 d-flex justify-content-between align-items-center p-2"
-                data-bs-toggle="collapse" data-bs-target="#beverages-collapse" aria-expanded="false">
-                <div class="d-flex gap-3">
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlink:href="#health"></use>
-                  </svg>
-                  <span>Health products</span>
-                </div>
-              </a>
-              <div class="collapse" id="beverages-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal ps-5 pb-1">
-                  <li class="border-bottom py-2"><a href="shop.html" class="dropdown-item">Dogs</a></li>
-                  <li class="border-bottom py-2"><a href="shop.html" class="dropdown-item">Cats</a></li>
-                  <li class="border-bottom py-2"><a href="shop.html" class="dropdown-item">Rabbits</a></li>
-                  <li class="border-bottom py-2"><a href="shop.html" class="dropdown-item">Birds</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a href="shop.html" class="nav-link d-flex align-items-center gap-3 p-2">
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                  <use xlink:href="#household"></use>
-                </svg>
-                <span>Household Supplies</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="shop.html" class="nav-link d-flex align-items-center gap-3 p-2">
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                  <use xlink:href="#personal"></use>
-                </svg>
-                <span>Medications</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="shop.html" class="nav-link d-flex align-items-center gap-3 p-2">
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                  <use xlink:href="#pet"></use>
-                </svg>
-                <span>Pet clothings</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-9">
-          <div class="row">
-            <div class="col-md-12">
-
-              <div class="section-header d-flex flex-wrap justify-content-between pb-2 mt-5 mt-lg-0">
-
-                <h2 class="section-title">Best selling products</h2>
-
-                <div class="d-flex align-items-center">
-                  <a href="#" class="btn btn-primary rounded-1">View All</a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-
-              <div class="product-grid row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4">
-
-                <div class="col">
-                  <div class="product-item mb-4">
-                    <figure>
-                      <a href="single-product.html" title="Product Title">
-                        <img src="images\care & treat images\IMG_8128.JPG" alt="Product Thumbnail" class="tab-image img-fluid rounded-3">
-                      </a>
-                    </figure>
-                    <div class="d-flex flex-column text-center">
-                      <h3 class="fs-5 fw-normal"><a href="single-product.html" class="text-decoration-none">Product Item</a></h3>
-                      <div class="d-flex justify-content-center align-items-center gap-2">
-                        <del>$24.00</del>
-                        <span class="text-dark fw-semibold">$18.00</span>
-                      </div>
-                      <div class="button-area p-3">
-                        <div class="justify-content-center d-flex mb-3">
-                          <div class="input-group product-qty">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-left-minus btn btn-light btn-number" data-type="minus" data-field="">
-                                  <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                                </button>
-                            </span>
-                            <input type="text" id="quantity" name="quantity" class="quantity form-control input-number text-center" value="1" min="1" max="100">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-right-plus btn btn-light btn-number" data-type="plus" data-field="">
-                                    <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                                </button>
-                            </span>
-                          </div>
-                        </div>
-                        <div><a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg width="18" height="18">
-                            <use xlink:href="#cart"></use>
-                          </svg> Add to Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="product-item mb-4">
-                    <figure>
-                      <a href="single-product.html" title="Product Title">
-                        <img src="images\care & treat images\IMG_8129.JPG" alt="Product Thumbnail" class="tab-image img-fluid rounded-3">
-                      </a>
-                    </figure>
-                    <div class="d-flex flex-column text-center">
-                      <h3 class="fs-5 fw-normal"><a href="single-product.html" class="text-decoration-none">Product Item</a></h3>
-                      <div class="d-flex justify-content-center align-items-center gap-2">
-                        <del>$24.00</del>
-                        <span class="text-dark fw-semibold">$18.00</span>
-                      </div>
-                      <div class="button-area p-3">
-                        <div class="justify-content-center d-flex mb-3">
-                          <div class="input-group product-qty">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-left-minus btn btn-light btn-number" data-type="minus" data-field="">
-                                  <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                                </button>
-                            </span>
-                            <input type="text" id="quantity" name="quantity" class="quantity form-control input-number text-center" value="1" min="1" max="100">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-right-plus btn btn-light btn-number" data-type="plus" data-field="">
-                                    <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                                </button>
-                            </span>
-                          </div>
-                        </div>
-                        <div><a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg width="18" height="18">
-                            <use xlink:href="#cart"></use>
-                          </svg> Add to Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="product-item mb-4">
-                    <figure>
-                      <a href="single-product.html" title="Product Title">
-                        <img src="images\care & treat images\IMG_8130.JPG" alt="Product Thumbnail" class="tab-image img-fluid rounded-3">
-                      </a>
-                    </figure>
-                    <div class="d-flex flex-column text-center">
-                      <h3 class="fs-5 fw-normal"><a href="single-product.html" class="text-decoration-none">Product Item</a></h3>
-                      <div class="d-flex justify-content-center align-items-center gap-2">
-                        <del>$24.00</del>
-                        <span class="text-dark fw-semibold">$18.00</span>
-                      </div>
-                      <div class="button-area p-3">
-                        <div class="justify-content-center d-flex mb-3">
-                          <div class="input-group product-qty">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-left-minus btn btn-light btn-number" data-type="minus" data-field="">
-                                  <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                                </button>
-                            </span>
-                            <input type="text" id="quantity" name="quantity" class="quantity form-control input-number text-center" value="1" min="1" max="100">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-right-plus btn btn-light btn-number" data-type="plus" data-field="">
-                                    <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                                </button>
-                            </span>
-                          </div>
-                        </div>
-                        <div><a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg width="18" height="18">
-                            <use xlink:href="#cart"></use>
-                          </svg> Add to Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="product-item mb-4">
-                    <figure>
-                      <a href="single-product.html" title="Product Title">
-                        <img src="images\care & treat images\IMG_8131.JPG" alt="Product Thumbnail" class="tab-image img-fluid rounded-3">
-                      </a>
-                    </figure>
-                    <div class="d-flex flex-column text-center">
-                      <h3 class="fs-5 fw-normal"><a href="single-product.html" class="text-decoration-none">Product Item</a></h3>
-                      <div class="d-flex justify-content-center align-items-center gap-2">
-                        <del>$24.00</del>
-                        <span class="text-dark fw-semibold">$18.00</span>
-                      </div>
-                      <div class="button-area p-3">
-                        <div class="justify-content-center d-flex mb-3">
-                          <div class="input-group product-qty">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-left-minus btn btn-light btn-number" data-type="minus" data-field="">
-                                  <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                                </button>
-                            </span>
-                            <input type="text" id="quantity" name="quantity" class="quantity form-control input-number text-center" value="1" min="1" max="100">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-right-plus btn btn-light btn-number" data-type="plus" data-field="">
-                                    <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                                </button>
-                            </span>
-                          </div>
-                        </div>
-                        <div><a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg width="18" height="18">
-                            <use xlink:href="#cart"></use>
-                          </svg> Add to Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="product-item mb-4">
-                    <figure>
-                      <a href="single-product.html" title="Product Title">
-                        <img src="images\care & treat images\IMG_8132.JPG" alt="Product Thumbnail" class="tab-image img-fluid rounded-3">
-                      </a>
-                    </figure>
-                    <div class="d-flex flex-column text-center">
-                      <h3 class="fs-5 fw-normal"><a href="single-product.html" class="text-decoration-none">Product Item</a></h3>
-                      <div class="d-flex justify-content-center align-items-center gap-2">
-                        <del>$24.00</del>
-                        <span class="text-dark fw-semibold">$18.00</span>
-                      </div>
-                      <div class="button-area p-3">
-                        <div class="justify-content-center d-flex mb-3">
-                          <div class="input-group product-qty">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-left-minus btn btn-light btn-number" data-type="minus" data-field="">
-                                  <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                                </button>
-                            </span>
-                            <input type="text" id="quantity" name="quantity" class="quantity form-control input-number text-center" value="1" min="1" max="100">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-right-plus btn btn-light btn-number" data-type="plus" data-field="">
-                                    <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                                </button>
-                            </span>
-                          </div>
-                        </div>
-                        <div><a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg width="18" height="18">
-                            <use xlink:href="#cart"></use>
-                          </svg> Add to Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="product-item mb-4">
-                    <figure>
-                      <a href="single-product.html" title="Product Title">
-                        <img src="images/product-thumbnail-6.jpg" alt="Product Thumbnail" class="tab-image img-fluid rounded-3">
-                      </a>
-                    </figure>
-                    <div class="d-flex flex-column text-center">
-                      <h3 class="fs-5 fw-normal"><a href="single-product.html" class="text-decoration-none">Product Item</a></h3>
-                      <div class="d-flex justify-content-center align-items-center gap-2">
-                        <del>$24.00</del>
-                        <span class="text-dark fw-semibold">$18.00</span>
-                      </div>
-                      <div class="button-area p-3">
-                        <div class="justify-content-center d-flex mb-3">
-                          <div class="input-group product-qty">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-left-minus btn btn-light btn-number" data-type="minus" data-field="">
-                                  <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                                </button>
-                            </span>
-                            <input type="text" id="quantity" name="quantity" class="quantity form-control input-number text-center" value="1" min="1" max="100">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-right-plus btn btn-light btn-number" data-type="plus" data-field="">
-                                    <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                                </button>
-                            </span>
-                          </div>
-                        </div>
-                        <div><a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg width="18" height="18">
-                            <use xlink:href="#cart"></use>
-                          </svg> Add to Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="product-item mb-4">
-                    <figure>
-                      <a href="single-product.html" title="Product Title">
-                        <img src="images/product-thumbnail-7.jpg" alt="Product Thumbnail" class="tab-image img-fluid rounded-3">
-                      </a>
-                    </figure>
-                    <div class="d-flex flex-column text-center">
-                      <h3 class="fs-5 fw-normal"><a href="single-product.html" class="text-decoration-none">Product Item</a></h3>
-                      <div class="d-flex justify-content-center align-items-center gap-2">
-                        <del>$24.00</del>
-                        <span class="text-dark fw-semibold">$18.00</span>
-                      </div>
-                      <div class="button-area p-3">
-                        <div class="justify-content-center d-flex mb-3">
-                          <div class="input-group product-qty">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-left-minus btn btn-light btn-number" data-type="minus" data-field="">
-                                  <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                                </button>
-                            </span>
-                            <input type="text" id="quantity" name="quantity" class="quantity form-control input-number text-center" value="1" min="1" max="100">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-right-plus btn btn-light btn-number" data-type="plus" data-field="">
-                                    <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                                </button>
-                            </span>
-                          </div>
-                        </div>
-                        <div><a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg width="18" height="18">
-                            <use xlink:href="#cart"></use>
-                          </svg> Add to Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="product-item mb-4">
-                    <figure>
-                      <a href="single-product.html" title="Product Title">
-                        <img src="images/product-thumbnail-8.jpg" alt="Product Thumbnail" class="tab-image img-fluid rounded-3">
-                      </a>
-                    </figure>
-                    <div class="d-flex flex-column text-center">
-                      <h3 class="fs-5 fw-normal"><a href="single-product.html" class="text-decoration-none">Product Item</a></h3>
-                      <div class="d-flex justify-content-center align-items-center gap-2">
-                        <del>$24.00</del>
-                        <span class="text-dark fw-semibold">$18.00</span>
-                      </div>
-                      <div class="button-area p-3">
-                        <div class="justify-content-center d-flex mb-3">
-                          <div class="input-group product-qty">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-left-minus btn btn-light btn-number" data-type="minus" data-field="">
-                                  <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                                </button>
-                            </span>
-                            <input type="text" id="quantity" name="quantity" class="quantity form-control input-number text-center" value="1" min="1" max="100">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-right-plus btn btn-light btn-number" data-type="plus" data-field="">
-                                    <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                                </button>
-                            </span>
-                          </div>
-                        </div>
-                        <div><a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg width="18" height="18">
-                            <use xlink:href="#cart"></use>
-                          </svg> Add to Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="product-item mb-4">
-                    <figure>
-                      <a href="single-product.html" title="Product Title">
-                        <img src="images/product-thumbnail-9.jpg" alt="Product Thumbnail" class="tab-image img-fluid rounded-3">
-                      </a>
-                    </figure>
-                    <div class="d-flex flex-column text-center">
-                      <h3 class="fs-5 fw-normal"><a href="single-product.html" class="text-decoration-none">Product Item</a></h3>
-                      <div class="d-flex justify-content-center align-items-center gap-2">
-                        <del>$24.00</del>
-                        <span class="text-dark fw-semibold">$18.00</span>
-                      </div>
-                      <div class="button-area p-3">
-                        <div class="justify-content-center d-flex mb-3">
-                          <div class="input-group product-qty">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-left-minus btn btn-light btn-number" data-type="minus" data-field="">
-                                  <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                                </button>
-                            </span>
-                            <input type="text" id="quantity" name="quantity" class="quantity form-control input-number text-center" value="1" min="1" max="100">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-right-plus btn btn-light btn-number" data-type="plus" data-field="">
-                                    <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                                </button>
-                            </span>
-                          </div>
-                        </div>
-                        <div><a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg width="18" height="18">
-                            <use xlink:href="#cart"></use>
-                          </svg> Add to Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="product-item mb-4">
-                    <figure>
-                      <a href="single-product.html" title="Product Title">
-                        <img src="images/product-thumbnail-10.jpg" alt="Product Thumbnail" class="tab-image img-fluid rounded-3">
-                      </a>
-                    </figure>
-                    <div class="d-flex flex-column text-center">
-                      <h3 class="fs-5 fw-normal"><a href="single-product.html" class="text-decoration-none">Product Item</a></h3>
-                      <div class="d-flex justify-content-center align-items-center gap-2">
-                        <del>$24.00</del>
-                        <span class="text-dark fw-semibold">$18.00</span>
-                      </div>
-                      <div class="button-area p-3">
-                        <div class="justify-content-center d-flex mb-3">
-                          <div class="input-group product-qty">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-left-minus btn btn-light btn-number" data-type="minus" data-field="">
-                                  <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                                </button>
-                            </span>
-                            <input type="text" id="quantity" name="quantity" class="quantity form-control input-number text-center" value="1" min="1" max="100">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-right-plus btn btn-light btn-number" data-type="plus" data-field="">
-                                    <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                                </button>
-                            </span>
-                          </div>
-                        </div>
-                        <div><a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg width="18" height="18">
-                            <use xlink:href="#cart"></use>
-                          </svg> Add to Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="product-item mb-4">
-                    <figure>
-                      <a href="single-product.html" title="Product Title">
-                        <img src="images/product-thumbnail-11.jpg" alt="Product Thumbnail" class="tab-image img-fluid rounded-3">
-                      </a>
-                    </figure>
-                    <div class="d-flex flex-column text-center">
-                      <h3 class="fs-5 fw-normal"><a href="single-product.html" class="text-decoration-none">Product Item</a></h3>
-                      <div class="d-flex justify-content-center align-items-center gap-2">
-                        <del>$24.00</del>
-                        <span class="text-dark fw-semibold">$18.00</span>
-                      </div>
-                      <div class="button-area p-3">
-                        <div class="justify-content-center d-flex mb-3">
-                          <div class="input-group product-qty">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-left-minus btn btn-light btn-number" data-type="minus" data-field="">
-                                  <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                                </button>
-                            </span>
-                            <input type="text" id="quantity" name="quantity" class="quantity form-control input-number text-center" value="1" min="1" max="100">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-right-plus btn btn-light btn-number" data-type="plus" data-field="">
-                                    <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                                </button>
-                            </span>
-                          </div>
-                        </div>
-                        <div><a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg width="18" height="18">
-                            <use xlink:href="#cart"></use>
-                          </svg> Add to Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="product-item mb-4">
-                    <figure>
-                      <a href="single-product.html" title="Product Title">
-                        <img src="images/product-thumbnail-12.jpg" alt="Product Thumbnail" class="tab-image img-fluid rounded-3">
-                      </a>
-                    </figure>
-                    <div class="d-flex flex-column text-center">
-                      <h3 class="fs-5 fw-normal"><a href="single-product.html" class="text-decoration-none">Product Item</a></h3>
-                      <div class="d-flex justify-content-center align-items-center gap-2">
-                        <del>$24.00</del>
-                        <span class="text-dark fw-semibold">$18.00</span>
-                      </div>
-                      <div class="button-area p-3">
-                        <div class="justify-content-center d-flex mb-3">
-                          <div class="input-group product-qty">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-left-minus btn btn-light btn-number" data-type="minus" data-field="">
-                                  <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                                </button>
-                            </span>
-                            <input type="text" id="quantity" name="quantity" class="quantity form-control input-number text-center" value="1" min="1" max="100">
-                            <span class="input-group-btn">
-                                <button type="button" class="quantity-right-plus btn btn-light btn-number" data-type="plus" data-field="">
-                                    <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                                </button>
-                            </span>
-                          </div>
-                        </div>
-                        <div><a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg width="18" height="18">
-                            <use xlink:href="#cart"></use>
-                          </svg> Add to Cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-               
-
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div> -->
-  </section>
-
-
-  <!-- <section id="customers-reviews" class="position-relative section-padding jarallax"
-    style="background-image: url(images/banner-image-bg.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
-    <div class="container offset-md-3 col-md-6 ">
-      <div class="position-absolute top-50 end-0 pe-0 pe-xxl-5 me-0 me-xxl-5 testimonial-button-next">
-        <svg class="chevron-forward-circle d-flex justify-content-center align-items-center p-2" width="80" height="80">
-          <use xlink:href="#alt-arrow-right-outline"></use>
-        </svg>
-      </div>
-      <div class="position-absolute top-50 start-0 ps-0 ps-xxl-5 ms-0 ms-xxl-5 testimonial-button-prev">
-        <svg class="chevron-back-circle d-flex justify-content-center align-items-center p-2" width="80" height="80">
-          <use xlink:href="#alt-arrow-left-outline"></use>
-        </svg>
-      </div>
-      <div class="section-title mb-4 text-center">
-        <h2 class="section-title">Customers reviews</h2>
-      </div>
-      <div class="swiper testimonial-swiper ">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="card position-relative text-left p-5 border-light shadow-sm rounded-3">
-              <blockquote>"This pet shop has everything my furry friend needs! The quality of the products is amazing, and the staff is so helpful. Highly recommended!"</blockquote>
-              <h5 class="mt-1 fw-normal">Emma R., Dog Owner</h5>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card position-relative text-left p-5 border-light shadow-sm rounded-3">
-              <blockquote>"I found the perfect food and accessories for my cat here. The prices are great, and the delivery was super fast!"</blockquote>
-              <h5 class="mt-1 fw-normal">Mark T., Cat Lover</h5>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card position-relative text-left p-5 border-light shadow-sm rounded-3">
-              <blockquote>"A fantastic place for pet owners! Their selection of toys and treats keeps my puppy entertained and happy."</blockquote>
-              <h5 class="mt-1 fw-normal">Sophia L., Pet Parent</h5>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card position-relative text-left p-5 border-light shadow-sm rounded-3">
-              <blockquote>“I love shopping here for my rabbit! They have unique and high-quality pet products that I can’t find anywhere else.”</blockquote>
-              <h5 class="mt-1 fw-normal">Daniel G., Rabbit Enthusiast</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-
-  <section class="cards">
-    <article class="card card--1">
-      <div class="card__info-hover">
-        <svg class="card__like" viewBox="0 0 24 24">
-          <path fill="#000000"
-            d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
-        </svg>
-        <div class="card__clock-info">
-          <svg class="card__clock" viewBox="0 0 24 24">
-            <path
-              d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
-          </svg>
-          <!-- <span class="card__time">15 min</span> -->
-        </div>
-
-      </div>
-      <div class="card__img"></div>
-      <a href="#" class="card_link">
-        <div class="card__img--hover"></div>
-      </a>
-      <div class="card__info">
-        <span class="card__category"> Trusted pet products for everyday care </span>
-        <h3 class="card__title">For Cat & Dogs</h3>
-        <span class="card__by">by <a href="#" class="card__author" title="author">Care and treat</a></span>
-      </div>
-    </article>
-
-
-    <article class="card card--2">
-      <div class="card__info-hover">
-        <svg class="card__like" viewBox="0 0 24 24">
-          <path fill="#000000"
-            d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
-        </svg>
-        <div class="card__clock-info">
-          <svg class="card__clock" viewBox="0 0 24 24">
-            <path
-              d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
-          </svg>
-          <!-- <span class="card__time">15 min</span> -->
-        </div>
-
-      </div>
-      <div class="card__img"></div>
-      <a href="#" class="card_link">
-        <div class="card__img--hover"></div>
-      </a>
-      <div class="card__info">
-        <span class="card__category">Happy pet, relaxed pet parent</span>
-        <h3 class="card__title">For Pet Parents</h3>
-        <span class="card__by">by <a href="#" class="card__author" title="author">Care and treat</a></span>
-      </div>
-    </article>
-
-
-    <article class="card card--3">
-      <div class="card__info-hover">
-        <svg class="card__like" viewBox="0 0 24 24">
-          <path fill="#000000"
-            d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
-        </svg>
-        <div class="card__clock-info">
-          <svg class="card__clock" viewBox="0 0 24 24">
-            <path
-              d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
-          </svg>
-          <!-- <span class="card__time">15 min</span> -->
-        </div>
-
-      </div>
-      <div class="card__img"></div>
-      <a href="#" class="card_link">
-        <div class="card__img--hover"></div>
-      </a>
-      <div class="card__info">
-        <span class="card__category">Love Your Pet More with Our Combo Deals 🐾</span>
-        <h3 class="card__title">Combo Offers</h3>
-        <span class="card__by">by <a href="#" class="card__author" title="author">Care and Treat</a></span>
-      </div>
-    </article>
-
-  </section>
-
   <section>
     <div class="responsive-container-block bigContainer">
       <div class="responsive-container-block Container">
@@ -1473,8 +1229,6 @@
             ⁠Focus on quality ingredients<br>
             ⁠Developed for real pet care needs<br>
             ⁠Trusted by responsible pet parents<br>
-
-
           </p>
           <button class="explore">
             Explore
@@ -1482,305 +1236,6 @@
         </div>
       </div>
     </div>
-  </section>
-
-
-  <section>
-
-    <h1>Best Selling</h1>
-
-    <ul>
-      <li class="booking-card" style="background-image: url(images/image.png)">
-        <div class="book-container">
-          <div class="content">
-            <button class="btn">ORDER NOW</button>
-          </div>
-        </div>
-        <div class="informations-container">
-          <h2 class="title">Je suis un billet pour aller visiter un truc</h2>
-          <p class="sub-title">Et moi un je suis sous-titre</p>
-          <p class="price"><svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="currentColor"
-                d="M3,6H21V18H3V6M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M7,8A2,2 0 0,1 5,10V14A2,2 0 0,1 7,16H17A2,2 0 0,1 19,14V10A2,2 0 0,1 17,8H7Z" />
-            </svg>De 0 à 15 €</p>
-          <div class="more-information">
-            <div class="info-and-date-container">
-              <div class="box info">
-                <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                  <path fill="currentColor"
-                    d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
-                </svg>
-                <p>Parc des expositions à NANTES</p>
-              </div>
-              <div class="box date">
-                <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                  <path fill="currentColor"
-                    d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
-                </svg>
-                <p>Samedi 1er février 2020</p>
-              </div>
-            </div>
-            <p class="disclaimer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eveniet perferendis
-              culpa. Expedita architecto nesciunt, rem distinctio</p>
-          </div>
-        </div>
-      </li>
-
-      <li class="booking-card" style="background-image: url(images/care & treat images/Cat Smp Aloe & Oatmeal.PNG)">
-        <div class="book-container">
-          <div class="content">
-            <button class="btn">Réserver</button>
-          </div>
-        </div>
-        <div class="informations-container">
-          <h2 class="title">Je suis un billet pour aller visiter un truc</h2>
-          <p class="sub-title">Et moi un je suis sous-titre</p>
-          <p class="price"><svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="currentColor"
-                d="M3,6H21V18H3V6M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M7,8A2,2 0 0,1 5,10V14A2,2 0 0,1 7,16H17A2,2 0 0,1 19,14V10A2,2 0 0,1 17,8H7Z" />
-            </svg>De 0 à 15 €</p>
-          <div class="more-information">
-            <div class="info-and-date-container">
-              <div class="box info">
-                <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                  <path fill="currentColor"
-                    d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
-                </svg>
-                <p>Parc des expositions à NANTES</p>
-              </div>
-              <div class="box date">
-                <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                  <path fill="currentColor"
-                    d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
-                </svg>
-                <p>Samedi 1er février 2020</p>
-              </div>
-            </div>
-            <p class="disclaimer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eveniet perferendis
-              culpa. Expedita architecto nesciunt, rem distinctio</p>
-          </div>
-        </div>
-      </li>
-      <li class="booking-card"
-        style="background-image: url(https://images.unsplash.com/photo-1578944032637-f09897c5233d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ)">
-        <div class="book-container">
-          <div class="content">
-            <button class="btn">Réserver</button>
-          </div>
-        </div>
-        <div class="informations-container">
-          <h2 class="title">Je suis un billet pour aller visiter un truc</h2>
-          <p class="sub-title">Et moi un je suis sous-titre</p>
-          <p class="price"><svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="currentColor"
-                d="M3,6H21V18H3V6M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M7,8A2,2 0 0,1 5,10V14A2,2 0 0,1 7,16H17A2,2 0 0,1 19,14V10A2,2 0 0,1 17,8H7Z" />
-            </svg>De 0 à 15 €</p>
-          <div class="more-information">
-            <div class="info-and-date-container">
-              <div class="box info">
-                <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                  <path fill="currentColor"
-                    d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
-                </svg>
-                <p>Parc des expositions à NANTES</p>
-              </div>
-              <div class="box date">
-                <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                  <path fill="currentColor"
-                    d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
-                </svg>
-                <p>Samedi 1er février 2020</p>
-              </div>
-            </div>
-            <p class="disclaimer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eveniet perferendis
-              culpa. Expedita architecto nesciunt, rem distinctio</p>
-          </div>
-        </div>
-      </li>
-      <li class="booking-card"
-        style="background-image: url(https://images.unsplash.com/photo-1578944032637-f09897c5233d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ)">
-        <div class="book-container">
-          <div class="content">
-            <button class="btn">Réserver</button>
-          </div>
-        </div>
-        <div class="informations-container">
-          <h2 class="title">Je suis un billet pour aller visiter un truc</h2>
-          <p class="sub-title">Et moi un je suis sous-titre</p>
-          <p class="price"><svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="currentColor"
-                d="M3,6H21V18H3V6M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M7,8A2,2 0 0,1 5,10V14A2,2 0 0,1 7,16H17A2,2 0 0,1 19,14V10A2,2 0 0,1 17,8H7Z" />
-            </svg>De 0 à 15 €</p>
-          <div class="more-information">
-            <div class="info-and-date-container">
-              <div class="box info">
-                <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                  <path fill="currentColor"
-                    d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
-                </svg>
-                <p>Parc des expositions à NANTES</p>
-              </div>
-              <div class="box date">
-                <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                  <path fill="currentColor"
-                    d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
-                </svg>
-                <p>Samedi 1er février 2020</p>
-              </div>
-            </div>
-            <p class="disclaimer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eveniet perferendis
-              culpa. Expedita architecto nesciunt, rem distinctio</p>
-          </div>
-        </div>
-      </li>
-      <li class="booking-card"
-        style="background-image: url(https://images.unsplash.com/photo-1578944032637-f09897c5233d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ)">
-        <div class="book-container">
-          <div class="content">
-            <button class="btn">Réserver</button>
-          </div>
-        </div>
-        <div class="informations-container">
-          <h2 class="title">Je suis un billet pour aller visiter un truc</h2>
-          <p class="sub-title">Et moi un je suis sous-titre</p>
-          <p class="price"><svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="currentColor"
-                d="M3,6H21V18H3V6M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M7,8A2,2 0 0,1 5,10V14A2,2 0 0,1 7,16H17A2,2 0 0,1 19,14V10A2,2 0 0,1 17,8H7Z" />
-            </svg>De 0 à 15 €</p>
-          <div class="more-information">
-            <div class="info-and-date-container">
-              <div class="box info">
-                <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                  <path fill="currentColor"
-                    d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
-                </svg>
-                <p>Parc des expositions à NANTES</p>
-              </div>
-              <div class="box date">
-                <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                  <path fill="currentColor"
-                    d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
-                </svg>
-                <p>Samedi 1er février 2020</p>
-              </div>
-            </div>
-            <p class="disclaimer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eveniet perferendis
-              culpa. Expedita architecto nesciunt, rem distinctio</p>
-          </div>
-        </div>
-      </li>
-
-      <li class="booking-card"
-        style="background-image: url(https://images.unsplash.com/photo-1580137197581-df2bb346a786?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);">
-        <div class="book-container">
-          <div class="content">
-            <button class="btn">Réserver</button>
-          </div>
-        </div>
-        <div class="informations-container">
-          <h2 class="title">Je suis moi aussi un billet</h2>
-          <p class="sub-title">Et moi je suis un 2ème sous-titre</p>
-          <p class="price"><svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="currentColor"
-                d="M3,6H21V18H3V6M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M7,8A2,2 0 0,1 5,10V14A2,2 0 0,1 7,16H17A2,2 0 0,1 19,14V10A2,2 0 0,1 17,8H7Z" />
-            </svg>De 0 à 35 €</p>
-          <div class="more-information">
-            <div class="info-and-date-container">
-              <div class="box info">
-                <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                  <path fill="currentColor"
-                    d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
-                </svg>
-                <p>Parlement de Bretagne à RENNES</p>
-              </div>
-              <div class="box date">
-                <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                  <path fill="currentColor"
-                    d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
-                </svg>
-                <p>À partir du Dimanche 3 Juin 2020</p>
-              </div>
-            </div>
-            <p class="disclaimer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eveniet perferendis
-              culpa. Expedita architecto nesciunt, rem distinctio</p>
-          </div>
-        </div>
-      </li>
-      <li class="booking-card"
-        style="background-image: url(https://images.unsplash.com/photo-1579489225078-27977a77bf72?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);">
-        <div class="book-container">
-          <div class="content">
-            <button class="btn">Réserver</button>
-          </div>
-        </div>
-        <div class="informations-container">
-          <h2 class="title">Encore un billet</h2>
-          <p class="sub-title">Encore un sous-titre</p>
-          <p class="price"><svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="currentColor"
-                d="M3,6H21V18H3V6M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M7,8A2,2 0 0,1 5,10V14A2,2 0 0,1 7,16H17A2,2 0 0,1 19,14V10A2,2 0 0,1 17,8H7Z" />
-            </svg>20 €</p>
-          <div class="more-information">
-            <div class="info-and-date-container">
-              <div class="box info">
-                <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                  <path fill="currentColor"
-                    d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
-                </svg>
-                <p>Le Trident à CHERBOURG</p>
-              </div>
-              <div class="box date">
-                <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                  <path fill="currentColor"
-                    d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
-                </svg>
-                <p>Février 2020</p>
-              </div>
-            </div>
-            <p class="disclaimer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eveniet perferendis
-              culpa. Expedita architecto nesciunt, rem distinctio</p>
-          </div>
-        </div>
-      </li>
-      <li class="booking-card"
-        style="background-image: url(https://images.unsplash.com/photo-1532509854226-a2d9d8e66f8e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);">
-        <div class="book-container">
-          <div class="content">
-            <button class="btn">Réserver</button>
-          </div>
-        </div>
-        <div class="informations-container">
-          <h2 class="title">Now I'm a ticket but in english</h2>
-          <p class="sub-title">And me, call me "sub-title" now</p>
-          <p class="price"><svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="currentColor"
-                d="M3,6H21V18H3V6M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M7,8A2,2 0 0,1 5,10V14A2,2 0 0,1 7,16H17A2,2 0 0,1 19,14V10A2,2 0 0,1 17,8H7Z" />
-            </svg>From 0 to 15 €</p>
-          <div class="more-information">
-            <div class="info-and-date-container">
-              <div class="box info">
-                <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                  <path fill="currentColor"
-                    d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
-                </svg>
-                <p>Centre Pompidou at PARIS</p>
-              </div>
-              <div class="box date">
-                <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                  <path fill="currentColor"
-                    d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
-                </svg>
-                <p>From October to December 2020</p>
-              </div>
-            </div>
-            <p class="disclaimer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi eveniet perferendis
-              culpa. Expedita architecto nesciunt, rem distinctio</p>
-          </div>
-        </div>
-      </li>
-    </ul>
-
-
   </section>
 
   <section>
