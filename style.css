@@ -53,11 +53,11 @@ body {
   --swiper-theme-color: var(--bs-primary);
 }
 .btn-primary {
-  --bs-btn-color: #fff;
+  --bs-btn-color: #ffffff;
   --bs-btn-bg: var(--bs-primary);
   --bs-btn-border-color: transparent;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #618da8;
+  --bs-btn-hover-bg: #dd4242ff;;
   --bs-btn-hover-border-color: transparent;
   --bs-btn-focus-shadow-rgb: 49,132,253;
   --bs-btn-active-color: #fff;
@@ -1994,7 +1994,7 @@ h1 {
   background-attachment: initial;
   background-origin: initial;
   background-clip: initial;
-  background-color: #0381fe;
+  background-color: rgb(235, 59, 68);
 }
 
 .contact_us_2 .responsive-container-block {
